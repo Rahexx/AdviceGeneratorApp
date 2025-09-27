@@ -2,27 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get random advice quotes with this interactive advice generator app">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Advice generator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<body class="container">
+  <main class="advice" role="main">
+    <header class="advice__header">
+      <h1 class="advice__title">Advice #<span class="advice__number" aria-label="Advice number">117</span></h1>
+    </header>
+    
+    <blockquote class="advice__text" cite="https://api.adviceslip.com/">
+      "It is easy to sit up and take notice, what's difficult is getting up and taking action."
+    </blockquote>
+    
+    <picture class="advice__divider-container">
+      <source media="(min-width: 768px)" srcset="./images/pattern-divider-desktop.svg">
+      <img src="./images/pattern-divider-mobile.svg" alt="" class="advice__divider" role="presentation">
+    </picture>
+    
+    <button class="advice__random-btn" type="button" aria-label="Get new random advice">
+      <img src="./images/icon-dice.svg" alt="" class="advice__random-icon" role="presentation">
+    </button>
+  </main>
 </body>
 </html>
