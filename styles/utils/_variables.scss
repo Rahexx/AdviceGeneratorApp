@@ -12,21 +12,21 @@ $black: hsl(0, 0%, 0%);
 $font-primary: 'Manrope', sans-serif;
 $font-extra-bold: 800;
 
-$font-size-s: 13px;
-$font-size-m: 24px;
-$font-size-l: 28px;
+$font-size-s: 0.8125rem; // 13px
+$font-size-m: 1.5rem;    // 24px
+$font-size-l: 1.75rem;   // 28px
 
-$line-height-main: 135%;
+$line-height-main: 1.35; // 135%
 
-$letter-spacing-tight: -0.3px;
-$letter-spacing-wide: 4px;
+$letter-spacing-tight: -0.01875rem; // -0.3px
+$letter-spacing-wide: 0.25rem;      // 4px
 
-$spacing-4: 16px;
-$spacing-6: 24px;
-$spacing-8: 32px;
-$spacing-10: 40px;
-$spacing-12: 48px;
-$spacing-16: 64px;
-$spacing-18: 72px;
+$spacing-4: 1rem;    // 16px
+$spacing-6: 1.5rem;  // 24px
+$spacing-8: 2rem;    // 32px
+$spacing-10: 2.5rem; // 40px
+$spacing-12: 3rem;   // 48px
+$spacing-16: 4rem;   // 64px
+$spacing-18: 4.5rem; // 72px
 
-$breakpoint-tablet: 48rem;
+$breakpoint-tablet: 48rem; // 768px
