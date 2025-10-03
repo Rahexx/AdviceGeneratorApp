@@ -50,3 +50,16 @@
         }
     }
 }
+
+@media (min-width: $breakpoint-tablet) {
+    .advice {
+        padding: $spacing-12 $spacing-12 $spacing-18;;
+        width: 33.75rem; // 540px
+        border-radius: 0.938rem; // 15px
+
+        &__text {
+            margin: $spacing-6 0 $spacing-10;
+            font-size: $font-size-l;
+        }
+    }
+}
