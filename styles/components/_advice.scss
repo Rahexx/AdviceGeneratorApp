@@ -1,0 +1,65 @@
+@use "../utils/variables" as *;
+
+.advice {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: $spacing-10 $spacing-6 $spacing-16;
+    min-height: 5rem;
+    width: 21.4375rem; // 343px
+    background: $blue-900;
+    transform: translate(-50%, -50%);
+    border-radius: 0.625rem; // 10px
+
+    &__title, &__text {
+        line-height: $line-height-main;
+        font-weight: $font-extra-bold;
+        text-align: center;
+    }
+
+    &__title {
+        color: $green-300;
+        letter-spacing: $letter-spacing-wide;
+        font-size: $font-size-s;
+    }
+
+    &__text {
+        margin: $spacing-4 0 $spacing-8;
+        color: $blue-200;
+        letter-spacing: $letter-spacing-tight;
+        font-size: $font-size-m;
+    }
+
+    &__random--btn {
+        position: absolute;
+        left: 50%;
+        bottom: -2rem; // -32px
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4rem; // 64px
+        width: 4rem; // 64px
+        background: $green-300;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: box-shadow 0.3s ease-in-out;
+
+        &:hover {
+            box-shadow: 0 0 2.5rem 0 $green-300; // 40px
+        }
+    }
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .advice {
+        padding: $spacing-12 $spacing-12 $spacing-18;;
+        width: 33.75rem; // 540px
+        border-radius: 0.938rem; // 15px
+
+        &__text {
+            margin: $spacing-6 0 $spacing-10;
+            font-size: $font-size-l;
+        }
+    }
+}
